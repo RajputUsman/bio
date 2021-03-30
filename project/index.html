@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+   <style>
+       html, body {
+        font-family: 'Noto Sans JP', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+.log-section{
+    position: relative; /* or absolute */
+  top: 15em;
+  right: 25%;
+   text-align: center; 
+    /* margin-left: 200px; */
+    
+}
+.fp{
+    color: gray;
+}
+
+.login-section-field{
+ margin-bottom: 25px;   
+ padding: 5px 0px;
+ padding-right: 100px;
+ text-indent: 30px;
+ border-radius: 10px;
+ outline: none;
+}
+
+.log-section .login-section-btn{
+      padding:10px 20px;  
+}
+
+input{
+    border-color: transparent;
+}
+.login-section-btn{
+    border-radius: 10px;
+    
+    margin-top:15px;
+    border: none;
+    outline-style: unset;
+    background-color: darkblue;
+    color: white;
+    padding:10px;
+}
+.main-wrapper{
+    text-align: center;
+}
+   </style> 
+</head>
+<body>
+    <div class="main-wrapper">
+    <div style="float:left;">
+
+        <img src="login.png" alt="">
+    </div>
+    <div class="log-section" style="float:right;">
+        <h1>Admin Login</h1>
+        <div style="text-align: center;">
+            <input class="login-section-field" type="text" name="username" id="" placeholder="Username"><br>
+            <input class="login-section-field" type="password" name="password" placeholder="Password" id=""><br>
+            <span class="fp"><a href="" style="text-decoration: none; text-align:right;">Forgot Password?</a></span> <br>
+            <input style="margin-bottom:15px;" class="login-section-btn" type="submit" class="btn" value="Sign In">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/73d93a2bd5.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            margin: 0;
+            height: 100%;
+        }
+
+        .login-section {
+            text-align: center;
+        }
+        
+
+        .login-section-field {
+            display: flex;
+            font-size: 17px;
+            /* margin-bottom: 5px; */
+            padding: 15px 0px;
+            padding-right: 100px;
+            padding-left: 40px;
+            text-indent: 10px;
+            border-radius: 30px;
+            outline: none;
+            background-color: #E6E6E6;
+            border-color: transparent;
+        }
+
+        .login-section {
+            width: 22.2em;
+            margin-left: 40%;
+            text-align: center;
+            margin-right: 100%;
+        }
+
+        .login-section-btn {
+            border-radius: 10px;
+
+            margin-top: 15px;
+            border: none;
+            outline-style: unset;
+            background-color: #0248d3;
+            color: white;
+            padding: 10px 40px;
+        }
+
+        #user-type {
+            width: 21.3em;
+            clear: both;
+            font-size: 17px;
+            padding: 15px 0px;
+            padding-right: 100px;
+            padding-left: 40px;
+
+
+        }
+
+        #user-type option {
+            padding-left: 2000px;
+        }
+
+        .input-container {
+            display: flexbox;
+            /* display: flex; */
+            width: 100%;
+            margin-bottom: 15px;
+        }         
+        .icon {
+            font-size: 20px;
+            position: absolute;
+            color: #999999;
+            margin-left: -160px;
+            margin-top: 17px;
+            /* padding: 10px; */
+            /* min-width: 50px; */
+            /* text-align: center;/ */
+        }
+        #img-rep{
+            width: 100%;
+            height: 100%
+            }
+
+        @media only screen and (max-width: 600px) {
+            #img-rep{
+            width: 100%;
+            height: 200px;
+            }
+
+            .login-section{
+                position: absolute;
+                /* top: 20px; */
+                /* right: -400px; */
+                /* padding:400px; */
+                padding-right: 20px;
+                padding-left: 20px;
+                text-align: center;
+                margin: auto;
+            }
+
+            .login-section-btn{
+                margin-top: 20px;
+                font-size: 20px;
+                padding: 8px 40px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main=wrapper">
+        <div>
+            <img src="./Menu.png" id="img-rep" alt="">
+        </div>
+        <div class="login-section">
+            <h2>Admin Login</h2>
+                 <div class="inner-section">
+                    <i class="far fa-user icon"></i>
+                    <input class="login-section-field" type="text" name="username" id="" placeholder="Username">
+                </div><br>
+                <div class="input-container">
+                <i class="fas fa-lock icon"></i>
+                <input class="login-section-field" type="password" name="password" placeholder="Password" id="">
+            </div>
+            <div class="input-container">
+                <i class="fas fa-briefcase icon"></i> 
+                <select name="user-type" class="login-section-field" id="user-type">
+                    <option value="Administrator">Administrator</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+                <span class="fp"><a href="" style="text-decoration:none; color: #999999; float:right;">Forgot Password?</a></span>
+            <br>
+            <input class="login-section-btn" type="submit" class="btn" value="Sign In">
+
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
