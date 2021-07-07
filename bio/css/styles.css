@@ -151,7 +151,7 @@ a{
   }
   
   .btn:hover {
-    background: #dae1e7;
+    background-color: #00909e;
     background-image: -webkit-linear-gradient(top, #dae1e7, #dae1e7);
     background-image: -moz-linear-gradient(top, #dae1e7, #dae1e7);
     background-image: -ms-linear-gradient(top, #dae1e7, #dae1e7);
